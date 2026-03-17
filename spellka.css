@@ -1,0 +1,54 @@
+.reimu {
+    border-color: black;
+    border-radius: 5px;
+}
+
+.reimu .character {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+.reimu .b1 {
+    --angle: 0deg;
+}
+.reimu .b2 {
+    --angle: 45deg;
+}
+.reimu .b3 {
+    --angle: 90deg;
+}
+.reimu .b4 {
+    --angle: 135deg;
+}
+.reimu .b5 {
+    --angle: 180deg;
+}
+.reimu .b6 {
+    --angle: 225deg;
+}
+.reimu .b7 {
+    --angle: 270deg;
+}
+.reimu .b8 {
+    --angle: 315deg;
+}
+
+@keyframes leti {
+    0%   { transform: rotate(var(--angle)) translateX(0); opacity: 1; }
+    100% { transform: rotate(var(--angle)) translateX(120px); opacity: 0; }
+  }
+.reimu .bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: leti 2s ease-out infinite;
+}

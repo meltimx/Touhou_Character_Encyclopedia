@@ -1,0 +1,20 @@
+h1 {
+    
+}
+
+button {
+    background-color: red;
+    color: white;
+    border-width: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    transition-property: background;
+    transition-duration: 300ms;
+}
+
+button:hover {
+    background-color: blue;
+}
